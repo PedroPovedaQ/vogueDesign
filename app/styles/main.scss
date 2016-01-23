@@ -32,8 +32,17 @@ section{
 
 .fullpage{
   height: 100vh;
-  width:10000px;
+  width:16000px;
 }
+
+.gensection{
+  margin-left: 171px;
+  padding: 60px 40px;
+      height: 82vh;
+    width: auto;
+}
+
+
 .section1{
   padding: 85px 0px 60px 0px;
   height: 91vh;
@@ -54,9 +63,12 @@ section{
 .section3{
   margin-left: 450px;
   padding: 60px 40px;
+      height: 82vh;
+    width: auto;
 }
 .section3 .images img{
   padding: 0px 3px;
+  height: 100%;
 }
 
 .sec6image{
@@ -68,7 +80,7 @@ section{
 
 
 .youtube{
-  width: 1244px;
+  width: 100%;
   height:90.5%;
 
 }
@@ -240,7 +252,6 @@ height:100%;
 }
 
 .section7 .caption{
-  height: 100%;
 position: absolute;
 top: 85%;
 width: 99%;
@@ -250,9 +261,6 @@ width: 99%;
   position:absolute;
 }
 
-.imageholder{
-  text-align: justify;
-}
 
 // .browserupgrade {
 //   margin: 0.2em 0;
