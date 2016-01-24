@@ -42,9 +42,9 @@ section{
 }
 
 .gensection{
-  margin-left: 171px;
-  padding: 60px 40px;
-      height: 82vh;
+      margin-left: 171px;
+    padding: 31px 40px;
+    
     width: auto;
 }
 
@@ -57,7 +57,7 @@ section{
   padding: 85px 0px 60px 0px;
   height: 91vh;
     width: 133.3vh;
-    margin-left: -304px;
+    
 }
 
 .section2{
@@ -77,6 +77,22 @@ section{
       height: 82vh;
     width: auto;
 }
+
+
+.section8{
+     margin-left: 250px;
+    padding: 30px 40px;
+   
+}
+
+
+.section8 .images img{
+  padding: 0px 3px;
+  height: 75vh;
+
+}
+
+
 .section3 .images img{
   padding: 0px 3px;
   height: 75vh;
@@ -88,9 +104,7 @@ section{
   
 }
 
-.section5image {
-  height: 65.1vh;
-}
+
 
 .section5texture {
       height: 80.1vh;
@@ -213,14 +227,41 @@ section{
   position: absolute;
 }
 
+.section11 {
+        padding: 6vh 100px;
+}
+
+.section11 img{
+ height: 67vh;
+}
+
+.sec11leftimage img {
+          margin-top: 8vh;
+      position: absolute;
+}
+
+.sec11rightimage img{
+          margin-left: 32vh;
+}
+.section11 p{
+  margin-top: 12vh;
+}
 .seperationtext{
 
-    padding: 400px 125px;
+    padding: 46vh 125px;
     line-height: 25px;
-    width: 610px;
+    width: 577px;
     display: inline-block;
     float: left;
 
+}
+
+.section5 p{
+      position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 83vh;
+    margin-left: -482px;
 }
 
 .section5texture{
@@ -229,17 +270,23 @@ section{
 }
 
 .section5image{
-  margin-top: 130px;
+      margin-top: 102px;
+      height: 66%;
+
     margin-left: -350px;
 }
 
 .section6img1{
-      margin-left: 722px;
+          margin-left: 722px;
+    padding-top: 18px;
+    height: 92vh;
 }
 
 .section6img2{
-  float: left;
-  padding-top: 6vh;
+
+
+    padding-top: 51px;
+    height: 86vh;
 }
 
 .section6img2caption{
@@ -247,14 +294,17 @@ section{
 }
 
 .sepcopy{
-  float:left;
-  font-size: 20px;
+      float: left;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .section7 {
-margin-left: 240px;
-margin-top: 40px;
-height:100%;
+    margin-left: 240px;
+    margin-top: 40px;
+    height: 75%;
+    width: 1074px;
+  
 
 }
 
@@ -265,22 +315,25 @@ height:100%;
 }
 
 .sec7rightimage img{
-  margin-left: 542px;
+      margin-left: 375px;
 }
 
 .section7 img{
-  position:absolute;
+  position: absolute;
+    min-width: 62%;
+    max-height: 65vh;
+    max-width: inherit;
 }
 
-.section7 .caption{
-position: absolute;
-top: 85%;
-width: 99%;
+
+
+.section7 p{
+    position: absolute;
+    top: 86%;
+    width: 123%;
 }
 
-.section8 img{
-  position:absolute;
-}
+
 
 .section9 img{
   height: 77vh;
