@@ -57,6 +57,7 @@ section{
   padding: 85px 0px 60px 0px;
   height: 91vh;
     width: 133.3vh;
+    margin-left: -217px;
     
 }
 
@@ -300,10 +301,10 @@ section{
 }
 
 .section7 {
-    margin-left: 240px;
+        margin-left: 240px;
     margin-top: 40px;
     height: 75%;
-    width: 1074px;
+    width: auto;
   
 
 }
@@ -314,23 +315,25 @@ section{
     z-index: 2;
 }
 
-.sec7rightimage img{
-      margin-left: 375px;
-}
+
 
 .section7 img{
-  position: absolute;
-    min-width: 62%;
-    max-height: 65vh;
+      position: absolute;
+    /* min-width: 62%; */
+    /* max-height: 65vh; */
+    height: 60vh;
     max-width: inherit;
+}
+
+.sec7rightimage img{
+  position:relative;
+         margin-left: 42vh;
 }
 
 
 
 .section7 p{
-    position: absolute;
-    top: 86%;
-    width: 123%;
+        margin-top: 16vh;
 }
 
 
