@@ -4,7 +4,6 @@
 
 .promocredits {
     font-weight: bold;
-    
 }
 
 .winbutton {
@@ -26,7 +25,6 @@
     max-width: 94px;
     display: block;
     margin-bottom: 1vh;
-    
 }
 
 .shoplink {
@@ -34,12 +32,11 @@
     font-size: 16px;
 }
 
-.promomodal{
-        margin-left: auto;
+.promomodal {
+    margin-left: auto;
     margin-right: auto;
     max-width: 493px;
 }
-
 
 .caption {
     font-size: 21px;
@@ -49,25 +46,40 @@
 }
 
 .singleimage img {
-    width:100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.section5texture{
-    
+.doubleimage {
+    height: auto;
+    display: block;
+}
+
+.doubleimage img {
+    max-width: 100%;
 }
 
 
 
-.tall img{
+@media only screen and (min-width: 601px) {
+    .doubleimage img {
+        width: 48%;
+        margin-left: 0;
+        padding: 0 1px;
+    }
+}
+
+.section5texture {}
+
+.tall img {
     max-width: 460px;
     height: auto;
     margin: auto;
     display: block;
 }
 
-.wide img{
+.wide img {
     width: 90%;
     margin: auto;
 }
@@ -78,7 +90,6 @@
     text-align: justify;
 }
 
-section{
+section {
     margin-bottom: 8vh;
 }
-
