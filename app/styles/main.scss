@@ -8,6 +8,11 @@ body {
     width: 100%;
 }
 
+
+.pagescroll body{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 section {
     float: left;
     display: inline-block !important;
