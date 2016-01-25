@@ -6,8 +6,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    
-    
 }
 
 section {
@@ -17,6 +15,10 @@ section {
 
 .center {
     text-align: center;
+}
+
+.endtexture{
+  margin-left: 70px;
 }
 
 .pull-left {
@@ -39,9 +41,16 @@ section {
     clear: both;
 }
 
+
+
+
 .fullpage {
     height: 100vh;
-    width: 16000px;
+    width: 10000px;
+}
+
+.endimage{
+  right: 10000px;
 }
 
 .gensection {
@@ -325,7 +334,7 @@ section {
 }
 
 .formelements {
-        width: 34vw;
+    width: 34vw;
     margin-top: 42px;
 }
 
@@ -347,17 +356,19 @@ section {
 }
 
 .textinputs {
-    padding-top: 2vh;
+    padding-top: 1vh;
     font-style: italic;
     width: 100%;
     min-width: 420px;
     max-width: 480px;
 }
 
-
+input[type="checkbox"] {
+    display: none;
+}
 
 .textinputs input {
-        display: block;
+    display: block;
     margin: 1vh 0;
     width: 100%;
     border: none;
@@ -368,13 +379,12 @@ section {
     padding-left: 23px;
     padding-top: 6px;
     font-size: 17px;
-
 }
 
-label{
-  display: inline-block;
-  font-weight: normal;
-  font-size: 12px;
+label {
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
 }
 
 .formboxes {
@@ -382,15 +392,81 @@ label{
 }
 
 .formboxes input {
-    display: inline;
-    width: 100%;
+    //display: none;
+    /* width: 100%; */
     max-width: 620px;
     margin: 10px auto 10px auto;
     font-family: 'europa', sans-serif;
     font-size: 14px;
 }
 
+input[type="checkbox"] + label span {
+    // display:inline-block;
+    // width:19px;
+    // height:19px;
+    // margin:-1px 4px 0 0;
+    // vertical-align:middle;
+    // background:url(check_radio_sheet.png) left top no-repeat;
+    // cursor:pointer;
+}
 
+.checkboxFive {
+    
+    margin: 20px 0px;
+    position: relative;
+}
+
+.checkboxFive label span{
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.checkboxFive label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/**
+ * Create the hover event of the tick
+ */
+
+.checkboxFive label span:hover::after {
+    opacity: 0.5;
+}
+
+
+/**
+ * Create the checkbox state for the tick
+ */
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.checkboxFive p {
+  margin-left:34px;
+}
 
 .cnp {
     height: 100%;
@@ -398,7 +474,6 @@ label{
     font-family: 'minion-pro', serif;
     color: #1a1a1a;
     -webkit-text-size-adjust: 100%;
-    
 }
 
 .checkitem {
@@ -414,6 +489,25 @@ label{
     background-color: #f7f7f7;
     color: #999;
     font-style: italic;
+    display: inline-block;
+}
+
+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 1px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
 }
 
 // .browserupgrade {
