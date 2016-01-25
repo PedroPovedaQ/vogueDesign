@@ -91,6 +91,171 @@
     text-align: justify;
 }
 
+
+
 section {
     margin-bottom: 8vh;
 }
+
+
+
+//form stuff below
+
+
+.formtitle span {
+    text-transform: uppercase;
+}
+
+.textinputs {
+    padding-top: 1vh;
+    font-style: italic;
+    width: 100%;
+    min-width: 420px;
+    max-width: 480px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.textinputs input {
+    display: block;
+    margin: 1vh 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    padding-bottom: 15px;
+    padding-left: 23px;
+    padding-top: 6px;
+    font-size: 17px;
+}
+
+label {
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.formelements{
+        max-width: 538px;
+    margin: 0 auto;
+}
+
+
+.formboxes {
+    font-family: 'europa', sans-serif;
+}
+
+.formboxes input {
+    //display: none;
+    /* width: 100%; */
+    max-width: 620px;
+    margin: 10px auto 10px auto;
+    font-family: 'europa', sans-serif;
+    font-size: 14px;
+}
+
+
+.customCheck {
+    
+    margin: 20px 0px;
+    position: relative;
+}
+
+.customCheck label span{
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.customCheck label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/**
+ * Create the hover event of the tick
+ */
+
+.customCheck label span:hover::after {
+    opacity: 0.5;
+}
+
+
+/**
+ * Create the checkbox state for the tick
+ */
+
+.customCheck input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.customCheck p {
+  margin-left:34px;
+}
+
+.cnp {
+    height: 100%;
+    width: 100%;
+    font-family: 'minion-pro', serif;
+    color: #1a1a1a;
+    -webkit-text-size-adjust: 100%;
+}
+
+.checkitem {
+    display: block;
+}
+
+.formsubmit {
+    font-weight: 600;
+    line-height: 54px;
+    font-size: 16px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    color: #999;
+    font-style: italic;
+    display: inline-block;
+}
+
+
+.formboxes label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 1px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+}
+
