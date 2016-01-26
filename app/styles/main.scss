@@ -81,7 +81,7 @@ section {
 
 .section1 {
     padding: 85px 0px 60px 0px;
-    height: 91vh;
+    height: 99vh;
     width: 133.3vh;
 }
 
@@ -116,12 +116,12 @@ section {
 
 .section8 .images img {
     padding: 0px 3px;
-    height: 75vh;
+    height: 81vh;
 }
 
 .section3 .images img {
     padding: 0px 3px;
-    height: 75vh;
+    height: 81vh;
 }
 
 .sec6image {
@@ -129,7 +129,7 @@ section {
 }
 
 .section5texture {
-    height: 80.1vh;
+    height: 83.1vh;
 }
 
 .youtube {
@@ -141,6 +141,7 @@ section {
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'minion-pro', serif;
+    margin: 0;
 }
 
 .promotext {
@@ -162,9 +163,19 @@ section {
 }
 
 .promosubtitle {
-    height: 100px;
+    height: 98px;
     max-width: 288px;
-    margin: 20px 0;
+    line-height: initial;
+    font-size: 44px;
+    font-style: italic;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+p.promosubtitle span {
+    display: block;
+    text-transform: uppercase;
+    font-style: normal;
 }
 
 .promologo {
@@ -186,7 +197,7 @@ section {
 
 .caption {
     font-size: 17px;
-    margin-top: 20px;
+    margin-top: 2.5vh;
     text-align: center;
     color: #999;
 }
@@ -248,7 +259,7 @@ section {
 }
 
 .section11 img {
-    height: 67vh;
+    height: 74vh;
 }
 
 .sec11leftimage img {
@@ -276,8 +287,8 @@ section {
     position: absolute;
     /* width: 100%; */
     text-align: center;
-    margin-top: 82vh;
-    margin-left: -24vh;
+    margin-top: 85vh;
+    margin-left: -228px;
 }
 
 .section5texture {
@@ -286,20 +297,20 @@ section {
 }
 
 .section5image {
-    margin-top: 102px;
-    height: 65vh;
+    margin-top: 17vh;
+    height: 67.5vh;
     margin-left: -350px;
 }
 
 .section6img1 {
     margin-left: 722px;
-    padding-top: 1.2vh;
-    height: 88vh;
+    padding-top: 9.2vh;
+    height: 95vh;
 }
 
 .section6img2 {
-    padding-top: 51px;
-    height: 81vh;
+    padding-top: 12vh;
+    height: 88.5vh;
 }
 
 .section6img2caption {}
@@ -326,7 +337,7 @@ section {
     position: absolute;
     /* min-width: 62%; */
     /* max-height: 65vh; */
-    height: 60vh;
+    height: 69vh;
     max-width: inherit;
 }
 
@@ -340,12 +351,12 @@ section {
 }
 
 .section9 img {
-    height: 77vh;
+ height: 84vh;
 }
 
 .section10 img {
     padding: 0px 7px;
-    height: 75vh;
+    height: 81vh;
 }
 
 .section12 {
