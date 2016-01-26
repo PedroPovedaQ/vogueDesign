@@ -9,13 +9,16 @@ body {
 }
 
 
-.pagescroll body{
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
+// .pagescroll body{
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+// }
+
+
 section {
     float: left;
     display: inline-block !important;
+
 }
 
 .center {
@@ -57,9 +60,9 @@ section {
 .fullpage {
     height: 99%;
     width: 15000px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     position: absolute;
-    overflow-y: hidden;
+    // overflow-y: hidden;
 }
 
 .endimage{
@@ -80,7 +83,6 @@ section {
     padding: 85px 0px 60px 0px;
     height: 91vh;
     width: 133.3vh;
-    margin-left: -217px;
 }
 
 .section2 {
@@ -101,8 +103,8 @@ section {
 }
 
 .section3 {
-    margin-left: 450px;
-    padding: 60px 40px;
+    
+    padding: 4vh 40px;
     height: 82vh;
     width: auto;
 }
@@ -259,7 +261,7 @@ section {
 }
 
 .section11 p {
-    margin-top: 12vh;
+  margin-top: 10vh;
 }
 
 .seperationtext {
@@ -272,10 +274,10 @@ section {
 
 .section5 p {
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
-    margin-top: 86vh;
-    margin-left: -482px;
+    margin-top: 82vh;
+    margin-left: -24vh;
 }
 
 .section5texture {
@@ -291,13 +293,13 @@ section {
 
 .section6img1 {
     margin-left: 722px;
-    padding-top: 18px;
-    height: 92vh;
+    padding-top: 1.2vh;
+    height: 88vh;
 }
 
 .section6img2 {
     padding-top: 51px;
-    height: 86vh;
+    height: 81vh;
 }
 
 .section6img2caption {}
