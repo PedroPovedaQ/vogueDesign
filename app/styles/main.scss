@@ -23,7 +23,12 @@ section {
 }
 
 .endtexture{
-  margin-left: 70px;
+  margin-left: 5vw;
+  
+  width: 100%;
+}
+.endtexture img{
+  height: 100vh;
 }
 
 .pull-left {
@@ -50,8 +55,11 @@ section {
 
 
 .fullpage {
-    height: 90%;
+    height: 99%;
     width: 15000px;
+    overflow-x: hidden;
+    position: absolute;
+    overflow-y: hidden;
 }
 
 .endimage{
@@ -78,12 +86,18 @@ section {
 .section2 {
     margin-top: 15vh;
     margin-left: -91px;
-    position: absolute;
+    position: relative;
     padding: 60px 40px;
     width: 550px;
     background-color: #FFF;
     height: 581px;
     z-index: 2;
+}
+
+.promomodal{
+
+    position: absolute;
+    overflow-x: hidden;
 }
 
 .section3 {
@@ -185,8 +199,8 @@ section {
 }
 
 .lower-p {
-    line-height: 25.5px;
-    width: 524px;
+        line-height: 25.5px;
+    width: 515px;
     letter-spacing: 0.1rem;
 }
 
