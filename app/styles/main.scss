@@ -58,7 +58,7 @@ section {
 
 
 .fullpage {
-    height: 99%;
+    height: calc(100vh - 60px);
     width: 15000px;
     // overflow-x: hidden;
     position: absolute;
@@ -80,20 +80,27 @@ section {
 }
 
 .section1 {
-    padding: 85px 0px 60px 0px;
-    height: 99vh;
+    //padding: 85px 0px 60px 0px;
+    height: 100%;
     width: 133.3vh;
+    position:relative;
 }
 
 .section2 {
-    margin-top: 15vh;
+    /* margin-top: 20vh; */
     margin-left: -91px;
     position: relative;
-    padding: 60px 40px;
+    padding: 0 40px;
+    padding-top: 5vh;
     width: 550px;
     background-color: #FFF;
-    height: 581px;
+    height: 77vh;
     z-index: 2;
+    max-height: 535px;
+    min-height: 500px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .promomodal{
@@ -117,13 +124,13 @@ section {
 .section8 .images img {
     padding: 0px 3px;
     height: 78vh;
-    margin-top: 4vh;
+    margin-top: 1vh;
 }
 
 .section3 .images img {
     padding: 0px 3px;
     height: 75vh;
-    margin-top: 6vh;
+    margin-top: 3vh;
 }
 
 .sec6image {
@@ -136,7 +143,15 @@ section {
 
 .youtube {
     width: 100%;
-    height: 90.5%;
+    height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video{
+    width: 100%;
+    height: 100%;
 }
 
 .promotitle {
@@ -148,6 +163,7 @@ section {
 
 .promotext {
     font-size: 17px;
+    margin-top: 2.6vh;
 }
 
 .promocredits {
@@ -165,23 +181,22 @@ section {
 }
 
 .promosubtitle {
-    height: 98px;
     max-width: 288px;
     line-height: 43px;
     font-size: 44px;
     font-style: italic;
     margin-top: 1vh;
-    margin-bottom: 3vh;
 }
 
 p.promosubtitle span {
     display: block;
     text-transform: uppercase;
     font-style: normal;
+    font-family: 'europa', sans-serif;
 }
 
 .promologo {
-    max-width: 94px;
+    height: 8vh;
     display: block;
     margin-bottom: 20px;
 }
@@ -193,8 +208,9 @@ p.promosubtitle span {
 
 .section4 {
     width: 900px;
-    margin-top: 160px;
-    margin-left: 200px;
+    /* margin-top: 160px; */
+    margin-left: 7vw;
+    height: 100%;
 }
 
 .caption {
@@ -232,7 +248,9 @@ p.promosubtitle span {
     margin-left: -86px;
     font-size: 15px;
     text-align: justify;
-    margin-top: 16vh;
+        top: 50%;
+    transform: translateY(-50%);
+        font-family: 'minion-pro', serif;
 }
 
 .firstmarble {
@@ -265,17 +283,17 @@ p.promosubtitle span {
 }
 
 .sec11leftimage img {
-    margin-top: 11vh;
+    margin-top: 6vh;
     position: absolute;
 }
 
 .sec11rightimage img {
     margin-left: 32vh;
-    margin-top:3vh;
+    margin-top:0.1vh;
 }
 
 .section11 p {
-  margin-top: 10vh;
+  margin-top: 7.5vh;
 }
 
 .seperationtext {
@@ -290,30 +308,30 @@ p.promosubtitle span {
     position: absolute;
     /* width: 100%; */
     text-align: center;
-    margin-top: 87vh;
+    margin-top: 84vh;
     margin-left: -228px;
 }
 
 .section5texture {
-    margin-top: 60px;
+    margin-top: 3vh;
     margin-left: -513px;
 }
 
 .section5image {
-    margin-top: 17vh;
+    margin-top: 14vh;
     height: 67.5vh;
     margin-left: -350px;
 }
 
 .section6img1 {
         margin-left: 72.5vh;
-    padding-top: 9.2vh;
-    height: 95vh;
+    padding-top: 3.2vh;
+    height: 89vh;
 }
 
 .section6img2 {
-    padding-top: 12vh;
-    height: 88.5vh;
+        padding-top: 5vh;
+    height: 83.5vh;
 }
 
 .section6img2caption {}
@@ -332,7 +350,7 @@ p.promosubtitle span {
 }
 
 .sec7leftimage img {
-    margin-top: 14vh;
+    margin-top: 11vh;
     z-index: 2;
 }
 
@@ -340,14 +358,14 @@ p.promosubtitle span {
     position: absolute;
     /* min-width: 62%; */
     /* max-height: 65vh; */
-    height: 68vh;
+    height: 65vh;
     max-width: inherit;
 }
 
 .sec7rightimage img {
-    position: relative;
+        position: relative;
     margin-left: 42vh;
-    margin-top: 4vh;
+    margin-top: 1vh;
 }
 
 .section7 p {
@@ -356,13 +374,13 @@ p.promosubtitle span {
 
 .section9 img {
      height: 79vh;
-    margin-top: 6vh;
+    margin-top: 2vh;
 }
 
 .section10 img {
     padding: 0px 7px;
     height: 79vh;
-    margin-top: 5vh;
+        margin-top: 2vh;
 }
 
 .section12 {
