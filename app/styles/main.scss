@@ -8,30 +8,26 @@ body {
     width: 100%;
 }
 
-
 // .pagescroll body{
 //   overflow-x: scroll;
 //   overflow-y: hidden;
 // }
-
-
 section {
     float: left;
     display: inline-block !important;
-
 }
 
 .center {
     text-align: center;
 }
 
-.endtexture{
-  margin-left: 5vw;
-  
-  width: 100%;
+.endtexture {
+    margin-left: 5vw;
+    width: 100%;
 }
-.endtexture img{
-  height: 100vh;
+
+.endtexture img {
+    height: 100vh;
 }
 
 .pull-left {
@@ -54,9 +50,6 @@ section {
     clear: both;
 }
 
-
-
-
 .fullpage {
     height: calc(100vh - 60px);
     width: 15000px;
@@ -65,8 +58,8 @@ section {
     // overflow-y: hidden;
 }
 
-.endimage{
-  right: 10000px;
+.endimage {
+    right: 10000px;
 }
 
 .gensection {
@@ -83,15 +76,15 @@ section {
     //padding: 85px 0px 60px 0px;
     height: 100%;
     width: 133.3vh;
-    position:relative;
+    position: relative;
 }
 
 .section2 {
     /* margin-top: 20vh; */
     margin-left: -91px;
     position: relative;
-    padding: 0 40px;
-    padding-top: 5vh;
+    padding: 0px 40px;
+    /* padding-top: 5vh; */
     width: 550px;
     background-color: #FFF;
     height: 77vh;
@@ -100,17 +93,18 @@ section {
     min-height: 500px;
     position: relative;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.promomodal{
-
+.promomodal {
     position: absolute;
     overflow-x: hidden;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .section3 {
-    
     padding: 4vh 40px;
     height: 82vh;
     width: auto;
@@ -138,7 +132,7 @@ section {
 }
 
 .section5texture {
-        height: 86.5vh;
+    height: 86.5vh;
 }
 
 .youtube {
@@ -149,7 +143,7 @@ section {
     transform: translateY(-50%);
 }
 
-.video{
+.video {
     width: 100%;
     height: 100%;
 }
@@ -230,7 +224,7 @@ p.promosubtitle span {
 }
 
 .lower-p {
-        line-height: 25.5px;
+    line-height: 25.5px;
     width: 515px;
     letter-spacing: 0.1rem;
 }
@@ -248,9 +242,9 @@ p.promosubtitle span {
     margin-left: -86px;
     font-size: 15px;
     text-align: justify;
-        top: 50%;
+    top: 50%;
     transform: translateY(-50%);
-        font-family: 'minion-pro', serif;
+    font-family: 'minion-pro', serif;
 }
 
 .firstmarble {
@@ -289,11 +283,11 @@ p.promosubtitle span {
 
 .sec11rightimage img {
     margin-left: 32vh;
-    margin-top:0.1vh;
+    margin-top: 0.1vh;
 }
 
 .section11 p {
-  margin-top: 7.5vh;
+    margin-top: 7.5vh;
 }
 
 .seperationtext {
@@ -324,13 +318,13 @@ p.promosubtitle span {
 }
 
 .section6img1 {
-        margin-left: 72.5vh;
+    margin-left: 72.5vh;
     padding-top: 3.2vh;
     height: 89vh;
 }
 
 .section6img2 {
-        padding-top: 5vh;
+    padding-top: 5vh;
     height: 83.5vh;
 }
 
@@ -363,7 +357,7 @@ p.promosubtitle span {
 }
 
 .sec7rightimage img {
-        position: relative;
+    position: relative;
     margin-left: 42vh;
     margin-top: 1vh;
 }
@@ -373,14 +367,14 @@ p.promosubtitle span {
 }
 
 .section9 img {
-     height: 79vh;
+    height: 79vh;
     margin-top: 2vh;
 }
 
 .section10 img {
     padding: 0px 7px;
     height: 79vh;
-        margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 .section12 {
@@ -458,14 +452,12 @@ label {
     font-size: 14px;
 }
 
-
 .customCheck {
-    
     margin: 20px 0px;
     position: relative;
 }
 
-.customCheck label span{
+.customCheck label span {
     cursor: pointer;
     position: absolute;
     width: 21px;
@@ -514,7 +506,7 @@ label {
 }
 
 .customCheck p {
-  margin-left:34px;
+    margin-left: 34px;
 }
 
 .cnp {
