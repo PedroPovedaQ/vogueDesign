@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // var width= $('.section13').position().left + 5000;
+    // var width= window.innerHeight*16.35;
 
     // $(".fullpage").width(width); 
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
     $(window).bind('resize', function() {
-
+    		
 
 
         (function($) {

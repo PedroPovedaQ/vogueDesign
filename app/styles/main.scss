@@ -387,6 +387,7 @@ p.promosubtitle span {
 }
 .section13 img{
     position:absolute;
+    height:100vh;
 
 }
 
@@ -624,16 +625,78 @@ label {
     }
 }
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 650px) {
+    .fullpage {
+        width: 11000px;
+    }
+}
+
+@media screen and (min-height: 690px) {
+    .fullpage {
+        width: 11300px;
+    }
+}
+
+@media screen and (min-height: 740px) {
+    .fullpage {
+        width: 11700px;
+    }
+}
+
+@media screen and (min-height: 775px) {
     .fullpage {
         width: 12200px;
     }
 }
 
+@media screen and (min-height: 822px) {
+    .fullpage {
+        width: 12600px;
+    }
+}
 
-@media screen and (min-height: 850px) {
+
+
+@media screen and (min-height: 855px) {
     .fullpage {
         width: 13000px;
+    }
+}
+
+@media screen and (min-height: 877px) {
+    .fullpage {
+        width: 13200px;
+    }
+}
+
+@media screen and (min-height: 893px) {
+    .fullpage {
+        width: 13300px;
+    }
+}
+
+@media screen and (min-height: 927px) {
+    .fullpage {
+        width: 13600px;
+    }
+}
+
+@media screen and (min-height: 963px) {
+    .fullpage {
+        width: 13900px;
+    }
+}
+
+
+@media screen and (min-height: 999px) {
+    .fullpage {
+        width: 14200px;
+    }
+}
+
+@media screen and (min-height: 1035px) {
+    .fullpage {
+        width: 14500px;
     }
 }
 
