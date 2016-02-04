@@ -17,17 +17,22 @@ section {
     display: inline-block !important;
 }
 
+.fullpage {
+    height: calc(100vh - 60px);
+    position: absolute;
+}
+
 .center {
     text-align: center;
 }
 
 .endtexture {
-    margin-left: 5vw;
-    width: 100%;
+    margin-left: 6vw;
 }
 
 .endtexture img {
     height: 100vh;
+    width:350px;
 }
 
 .pull-left {
@@ -50,13 +55,7 @@ section {
     clear: both;
 }
 
-.fullpage {
-    height: calc(100vh - 60px);
-    width: 15000px;
-    // overflow-x: hidden;
-    position: absolute;
-    // overflow-y: hidden;
-}
+
 
 .endimage {
     right: 10000px;
@@ -112,7 +111,7 @@ section {
 
 .section8 {
     margin-left: 250px;
-    padding: 30px 40px;
+    padding: 2.5vh 40px;
 }
 
 .section8 .images img {
@@ -344,7 +343,7 @@ p.promosubtitle span {
 }
 
 .sec7leftimage img {
-    margin-top: 11vh;
+    margin-top: 8.5vh;
     z-index: 2;
 }
 
@@ -383,6 +382,14 @@ p.promosubtitle span {
     width: auto;
 }
 
+.section13{
+        padding: 0 0 0 100px;
+}
+.section13 img{
+    position:absolute;
+
+}
+
 .formelements {
     width: 25vw;
     margin-top: 6vh;
@@ -399,9 +406,9 @@ p.promosubtitle span {
 
 .formelements h2 {
     font-size: 15px;
-    line-height: 4vh;
+    line-height: 20px;
     font-family: 'europa', sans-serif;
-    width: 484px;
+    width: 420px;
     text-align: justify;
     margin-top: 1vh;
 }
@@ -411,7 +418,6 @@ p.promosubtitle span {
     font-style: italic;
     width: 100%;
     min-width: 420px;
-    max-width: 480px;
 }
 
 input[type="checkbox"] {
@@ -606,23 +612,28 @@ label {
 //   }
 // }
 // /* Responsive: Portrait tablets and up */
-// @media screen and (min-width: 768px) {
-//   .container {
-//     max-width: 730px;
-//   }
-//   /* Remove the padding we set earlier */
-//   .header,
-//   .marketing,
-//   .footer {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-//   /* Space out the masthead */
-//   .header {
-//     margin-bottom: 30px;
-//   }
-//   /* Remove the bottom border on the jumbotron for visual effect */
-//   .jumbotron {
-//     border-bottom: 0;
-//   }
-// }
+@media screen and (min-height: 200px) {
+    .fullpage {
+        width: 9200px;
+    }
+}
+
+@media screen and (min-height: 500px) {
+    .fullpage {
+        width: 10500px;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .fullpage {
+        width: 12200px;
+    }
+}
+
+
+@media screen and (min-height: 850px) {
+    .fullpage {
+        width: 13000px;
+    }
+}
+

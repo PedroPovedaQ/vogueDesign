@@ -1,14 +1,20 @@
 'use strict';
 
 $(document).ready(function () {
+
+    // var width= $('.section13').position().left + 5000;
+
+    // $(".fullpage").width(width);
+
     (function ($) {
-        $.jInvertScroll(['.fullpage'], {
-            width: 'auto', // Page width (auto or int value)
-            height: 'auto' });
-    })( // Page height (the shorter, the faster the scroll)
+        $.jInvertScroll(['.fullpage'], {});
+    })(jQuery);
 
-    jQuery);
+    $(window).bind('resize', function () {
 
-    console.log('HI!');
+        (function ($) {
+            $.jInvertScroll(['.fullpage'], {});
+        })(jQuery);
+    });
 });
 //# sourceMappingURL=main.js.map

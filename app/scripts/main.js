@@ -1,14 +1,24 @@
 $(document).ready(function () {
+
+// var width= $('.section13').position().left + 5000;
+
+// $(".fullpage").width(width); 
+
     (function($) {
-        $.jInvertScroll(['.section1', '.section2' '.section3'], {
-    
-    
+        $.jInvertScroll(['.fullpage'], {
 });
-
-
-
     }(jQuery));
 
-    console.log('HI!')
+
+    $(window).bind('resize', function () { 
+
+
+
+    	(function($) {
+        $.jInvertScroll(['.fullpage'], {
+});
+    }(jQuery));
+    
+});
 });
 
