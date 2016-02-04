@@ -1,24 +1,21 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-// var width= $('.section13').position().left + 5000;
+    // var width= $('.section13').position().left + 5000;
 
-// $(".fullpage").width(width); 
+    // $(".fullpage").width(width); 
 
     (function($) {
-        $.jInvertScroll(['.fullpage'], {
-});
+        $.jInvertScroll(['.fullpage'], {});
     }(jQuery));
 
 
-    $(window).bind('resize', function () { 
+    $(window).bind('resize', function() {
 
 
 
-    	(function($) {
-        $.jInvertScroll(['.fullpage'], {
+        (function($) {
+            $.jInvertScroll(['.fullpage'], {});
+        }(jQuery));
+
+    });
 });
-    }(jQuery));
-    
-});
-});
-
