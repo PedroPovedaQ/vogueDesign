@@ -399,7 +399,8 @@ p.promosubtitle span {
 }
 
 .formelements {
-    width: 387px;
+
+    width: 488px;
 }
 
 .formtitle span {
@@ -409,14 +410,14 @@ p.promosubtitle span {
 .formelements h1 {
     font-style: italic;
     font-size: 30px;
-        margin-bottom: 1.8vh;
+    margin-bottom: 1.8vh;
 }
 
 .formelements h2 {
     font-size: 15px;
     line-height: 20px;
     font-family: 'europa', sans-serif;
-    width: 420px;
+    width: 461px;
     text-align: justify;
     margin-top: 1vh;
 }
@@ -538,7 +539,7 @@ label {
     font-weight: 600;
     line-height: 4vh;
     font-size: 16px;
-    width: 10vw;
+    width: 152px;
     margin-top: 0.4vh;
     background-color: #f7f7f7;
     color: #999;
@@ -564,61 +565,35 @@ label {
     transition: 0.2s;
 }
 
-// .browserupgrade {
-//   margin: 0.2em 0;
-//   background: #ccc;
-//   color: #000;
-//   padding: 0.2em 0;
-// }
-// // /* Space out content a bit */
-// // body {
-// //   padding-top: 20px;
-// //   padding-bottom: 20px;
-// // }
-// /* Everything but the jumbotron gets side spacing for mobile first views */
-// .header,
-// .marketing,
-// .footer {
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
-// /* Custom page header */
-// .header {
-//   border-bottom: 1px solid #e5e5e5;
-//   /* Make the masthead heading the same height as the navigation */
-//   h3 {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     line-height: 40px;
-//     padding-bottom: 19px;
-//   }
-// }
-// /* Custom page footer */
-// .footer {
-//   padding-top: 19px;
-//   color: #777;
-//   border-top: 1px solid #e5e5e5;
-// }
-// .container-narrow > hr {
-//   margin: 30px 0;
-// }
-// /* Main marketing message and sign up button */
-// .jumbotron {
-//   text-align: center;
-//   border-bottom: 1px solid #e5e5e5;
-//   .btn {
-//     font-size: 21px;
-//     padding: 14px 24px;
-//   }
-// }
-// /* Supporting marketing content */
-// .marketing {
-//   margin: 40px 0;
-//   p + h4 {
-//     margin-top: 28px;
-//   }
-// }
-// /* Responsive: Portrait tablets and up */
+.social{
+    margin-top: 1.5vh;
+}
+
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social img {
+    width: 52px;
+    height: 32px;
+    margin-left: 3vh;
+}
+
+.socialtext span{
+    margin-left: 4vh;
+}
+
+
+
 @media screen and (min-height: 420px) {
     .fullpage {
         width: 9000px;
@@ -627,67 +602,67 @@ label {
 
 @media screen and (min-height: 436px) {
     .fullpage {
-        width: 9200px;
+        width: 9300px;
     }
 }
 
 @media screen and (min-height: 500px) {
     .fullpage {
-        width: 9500px;
+        width: 9600px;
     }
 }
 
 @media screen and (min-height: 542px) {
     .fullpage {
-        width: 9800px;
+        width: 9900px;
     }
 }
 
 @media screen and (min-height: 560px) {
     .fullpage {
-        width: 10000px;
+        width: 10100px;
     }
 }
 
 @media screen and (min-height: 595px) {
     .fullpage {
-        width: 10300px;
+        width: 10400px;
     }
 }
 
 @media screen and (min-height: 624px) {
     .fullpage {
-        width: 10600px;
+        width: 10700px;
     }
 }
 
 @media screen and (min-height: 660px) {
     .fullpage {
-        width: 10900px;
+        width: 11000px;
     }
 }
 
 @media screen and (min-height: 690px) {
     .fullpage {
-        width: 11200px;
+        width: 11300px;
     }
 }
 
 @media screen and (min-height: 720px) {
     .fullpage {
-        width: 11500px;
+        width: 11600px;
     }
 }
 
 @media screen and (min-height: 750px) {
     .fullpage {
-        width: 11800px;
+        width: 11900px;
     }
 }
 
 @media screen and (min-height: 780px) {
     .fullpage {
-        width: 12100px;
+        width: 12200px;
     }
 }
 
@@ -699,67 +674,66 @@ label {
 
 @media screen and (min-height: 840px) {
     .fullpage {
-        width: 12700px;
+        width: 12800px;
     }
 }
 
 @media screen and (min-height: 870px) {
     .fullpage {
-        width: 13000px;
+        width: 13100px;
     }
 }
 
 @media screen and (min-height: 900px) {
     .fullpage {
-        width: 13300px;
+        width: 13400px;
     }
 }
 
 @media screen and (min-height: 930px) {
     .fullpage {
-        width: 13600px;
+        width: 13700px;
     }
 }
 
-
 @media screen and (min-height: 960px) {
     .fullpage {
-        width: 13900px;
+        width: 14000px;
     }
 }
 
 @media screen and (min-height: 990px) {
     .fullpage {
-        width: 14200px;
+        width: 14300px;
     }
 }
 
 @media screen and (min-height: 1020px) {
     .fullpage {
-        width: 14500px;
+        width: 14600px;
     }
 }
 
 @media screen and (min-height: 1050px) {
     .fullpage {
-        width: 14800px;
+        width: 14900px;
     }
 }
 
 @media screen and (min-height: 1080px) {
     .fullpage {
-        width: 15100px;
+        width: 15200px;
     }
 }
 
 @media screen and (min-height: 1095px) {
     .fullpage {
-        width: 15500px;
+        width: 15600px;
     }
 }
 
 @media screen and (min-height: 1160px) {
     .fullpage {
-        width: 16500px;
+        width: 16600px;
     }
 }
