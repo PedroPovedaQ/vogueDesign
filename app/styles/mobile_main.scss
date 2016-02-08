@@ -196,6 +196,8 @@ section {
     font-family: 'europa', sans-serif;
     font-style: italic;
     display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .formelements h2 {
@@ -344,6 +346,7 @@ label {
 
 .customCheck p {
     margin-left: 34px;
+    margin-top: 3px;
     text-align: justify;
 }
 
@@ -390,7 +393,7 @@ label {
     z-index: 0;
     border: 1px solid #5a5a5a;
     border-radius: 1px;
-    margin-top: 2px;
+    
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
