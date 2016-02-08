@@ -456,6 +456,7 @@ label {
 .formboxes {
     font-family: 'europa', sans-serif;
     color: #999;
+        margin-top: 2vh;
 }
 
 .formboxes input {
@@ -737,3 +738,11 @@ label {
         width: 16600px;
     }
 }
+
+
+@media screen and (max-width: 700px) {
+    section{
+        display: block;
+    }
+}
+

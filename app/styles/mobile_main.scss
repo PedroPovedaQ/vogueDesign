@@ -1,3 +1,29 @@
+div{
+    overflow-x: hidden;
+}
+
+.section2 a{
+    text-decoration: none;
+}
+.promotitle{
+    text-transform: uppercase;
+}
+
+.promosubtitle {
+    max-width: 288px;
+    line-height: 43px;
+    font-size: 44px;
+    font-style: italic;
+    height: 100px;
+    margin: 1vh 0;
+}
+
+p.promosubtitle span {
+    display: block;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: 'europa', sans-serif;
+}
 .promotext {
     font-size: 17px;
 }
@@ -6,6 +32,11 @@
     font-weight: bold;
 }
 
+
+
+
+
+
 .winbutton {
     background-color: #d7d5d5;
     font-family: 'europa', sans-serif;
@@ -13,12 +44,6 @@
     padding: 14px 40px;
     margin: 1vh 0;
     display: inline-block;
-}
-
-.promosubtitle {
-    height: 100px;
-    max-width: 288px;
-    margin: 1vh 0;
 }
 
 .promologo {
@@ -39,11 +64,49 @@
 }
 
 .caption {
-    font-size: 21px;
+    font-size: 24px;
     margin-top: 1vh;
     text-align: center;
     color: #999;
 }
+.section4 p{
+    display:inline;
+}
+
+.paragraphtext{
+        padding: 60px 30px;
+}
+
+.row p {
+        font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+.row p span{
+    display: inline;
+    font-size: 50px;
+    float: left;
+    padding: 10px;
+    margin: 2px 0 0 -12px;
+}
+
+.section4 {
+    margin-bottom: 2vh;
+}
+
+.section4 img{}
+
+.section5texture {
+    z-index: -5;
+    height: 50vh;
+    width: 66%;
+    margin-top: -41vh;
+    position: absolute;
+    margin-left: 32%;
+
+}
+
+
 
 .singleimage img {
     width: 100%;
@@ -67,7 +130,10 @@
     .doubleimage img {
         width: 48%;
         margin-left: 0;
-        padding: 0 1px;
+    }
+
+    .rightimage {
+        padding-left:18px;
     }
 }
 
@@ -87,9 +153,9 @@
 
 .sepcopy {
     float: left;
-    font-size: 20px;
-    text-align: justify;
-        margin: 0 4vw;
+    font-size: 23px;
+    text-align: center;
+    margin: 12vh 4vw;
 }
 
 
@@ -101,13 +167,35 @@ section {
 //section7
 
 .section7 img{
+    width:70%;
+
+}
+
+.sec7rightimage{
+        margin: 0 -30% -150px 30%;
+}
+
+.section11 img{
+    width: 60%;
+    margin-left: 4vw;
+}
+
+.sec11rightimage{
+        margin: 0 -30% -400px 30%;
+}
+
+
+
+.section12 {
+    width: auto;
+    text-align:center;
 
 }
 
 .formelements{
     font-family: 'europa', sans-serif;
     font-style: italic;
-
+    display: inline-block;
 }
 
 .formelements h2 {
@@ -127,6 +215,11 @@ section {
 //form stuff below
 
 
+
+.formtitle{
+    font-family: 'minion-pro', serif
+}
+
 .formtitle span {
     text-transform: uppercase;
 }
@@ -134,14 +227,26 @@ section {
 .formelements h1 {
     font-style: italic;
     font-size: 30px;
+    margin-bottom: 1.8vh;
+    font-weight: normal;
+}
+
+.formelements h2 {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'europa', sans-serif;
+    width: 461px;
+    text-align: justify;
+    margin-top: 1vh;
+    font-style: normal;
 }
 
 .textinputs {
     padding-top: 1vh;
+    padding-bottom: 2vh;
     font-style: italic;
     width: 100%;
     min-width: 420px;
-    max-width: 480px;
 }
 
 input[type="checkbox"] {
@@ -150,17 +255,17 @@ input[type="checkbox"] {
 
 .textinputs input {
     display: block;
-    margin: 1vh 0;
     width: 100%;
     border: none;
     border-bottom: 1px solid #9e9e9e;
     border-radius: 0;
     outline: none;
-    padding-bottom: 15px;
+    padding-bottom: 1.5vh;
     padding-left: 23px;
-    padding-top: 6px;
+    padding-top: 1vh;
     font-size: 17px;
-    font-style: italic;
+    font-style:italic;
+    font-family: 'minion-pro', serif;
 }
 
 label {
@@ -169,14 +274,10 @@ label {
     font-size: 12px;
 }
 
-.formelements{
-        max-width: 538px;
-    margin: 0 auto;
-}
-
-
 .formboxes {
     font-family: 'europa', sans-serif;
+    color: #999;
+        margin-top: 2vh;
 }
 
 .formboxes input {
@@ -188,26 +289,24 @@ label {
     font-size: 14px;
 }
 
-
 .customCheck {
-    
-    margin: 20px 0px;
     position: relative;
 }
 
-.customCheck label span{
+.customCheck label span {
     cursor: pointer;
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 17px;
     top: 0;
     left: 0;
     background: #fff;
     border: 1px solid #ddd;
+    margin-top: 12px;
 }
 
 .customCheck label:after {
-    opacity: 0.2;
+    opacity: 0.0;
     content: '';
     position: absolute;
     width: 9px;
@@ -223,6 +322,7 @@ label {
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    margin-top:12px;
 }
 
 
@@ -244,7 +344,8 @@ label {
 }
 
 .customCheck p {
-  margin-left:34px;
+    margin-left: 34px;
+    text-align: justify;
 }
 
 .cnp {
@@ -259,26 +360,34 @@ label {
     display: block;
 }
 
+.center {
+    text-align: center;
+}
+
+.submit{
+    margin-top:1vh;
+}
+
 .formsubmit {
     font-weight: 600;
-    line-height: 54px;
+    line-height: 4vh;
     font-size: 16px;
-    width: 200px;
-    margin: 20px auto;
+    width: 152px;
+    margin-top: 0.4vh;
     background-color: #f7f7f7;
     color: #999;
     font-style: italic;
-        display: block;
+    display: inline-block;
+        text-align: center;
 }
-
 
 .formboxes label:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     z-index: 0;
     border: 1px solid #5a5a5a;
     border-radius: 1px;
@@ -288,5 +397,42 @@ label {
     -o-transition: 0.2s;
     -ms-transition: 0.2s;
     transition: 0.2s;
+    margin-top:12px;
 }
 
+.social{
+    margin-top: 1.5vh;
+}
+
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social img {
+    width: 52px;
+    height: 32px;
+    margin-left: 4vh;
+}
+
+.socialtext span{
+    margin-left: 4vh;
+}
+
+//
+.section13{
+    margin-bottom:0;
+}
+.endtexture img{
+        width: 100%;
+    height: 200px;
+    display: block;
+}
