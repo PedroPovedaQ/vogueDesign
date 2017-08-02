@@ -1,8 +1,10 @@
+'use strict';
+
 $(document).ready(function() {
 
     // var width= window.innerHeight*16.35;
 
-    // $(".fullpage").width(width); 
+    // $(".fullpage").width(width);
 
     (function($) {
         $.jInvertScroll(['.fullpage'], {});
@@ -10,7 +12,7 @@ $(document).ready(function() {
 
 
     $(window).bind('resize', function() {
-    		
+
 
 
         (function($) {
