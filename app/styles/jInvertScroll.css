@@ -1,8 +1,4 @@
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
-    overflow-x: hidden;
-}
 
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0

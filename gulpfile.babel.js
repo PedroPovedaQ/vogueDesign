@@ -26,7 +26,7 @@ gulp.task("styles", () => {
       $.autoprefixer({ browsers: ["> 1%", "last 2 versions", "Firefox ESR"] })
     )
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest(".tmp/styles"))
+    .pipe(gulp.dest("dist/styles"))
     .pipe(reload({ stream: true }));
 });
 
@@ -37,7 +37,7 @@ gulp.task("scripts", () => {
     .pipe($.sourcemaps.init())
     .pipe($.babel())
     .pipe($.sourcemaps.write("."))
-    .pipe(gulp.dest(".tmp/scripts"))
+    .pipe(gulp.dest("dist/scripts"))
     .pipe(reload({ stream: true }));
 });
 
@@ -63,7 +63,7 @@ gulp.task("lint:test", lint("test/spec/**/*.js", testLintOptions));
 gulp.task("html", ["styles", "scripts"], () => {
   return gulp
     .src("app/*.html")
-    .pipe($.useref({ searchPath: [".tmp", "app", "."] }))
+    .pipe($.useref({ searchPath: [".tmp", ".tmp/styles", "app", "."] }))
     .pipe($.if("*.js", $.uglify()))
     .pipe($.if("*.css", $.cssnano()))
     .pipe($.if("*.html", $.htmlmin({ collapseWhitespace: true })))
