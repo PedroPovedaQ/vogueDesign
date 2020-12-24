@@ -194,7 +194,8 @@ gulp.task("wiredep", () => {
 });
 
 gulp.task("build", ["html", "styles", "images", "fonts", "extras"], () => {
-  return gulp.src("dist/**/*").pipe($.size({ title: "build", gzip: true }));
+  gulp.src("dist/**/*").pipe($.size({ title: "build", gzip: true }));
+  exit(0);
 });
 
 gulp.task("default", ["clean"], () => {
