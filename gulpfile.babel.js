@@ -1,9 +1,8 @@
-import browserSync from "browser-sync";
-import del from "del";
-// generated on 2016-01-20 using generator-gulp-webapp 1.1.1
-import gulp from "gulp";
-import gulpLoadPlugins from "gulp-load-plugins";
-import { stream as wiredep } from "wiredep";
+const browserSync = require("browser-sync");
+const del = require("del");
+const gulp = require("gulp");
+const gulpLoadPlugins = require("gulp-load-plugins");
+const wiredep = require("wiredep").stream;
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -22,9 +21,7 @@ gulp.task("styles", () => {
         })
         .on("error", $.sass.logError)
     )
-    .pipe(
-      $.autoprefixer({ browsers: ["> 1%", "last 2 versions", "Firefox ESR"] })
-    )
+    .pipe($.autoprefixer())
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest("dist/styles"))
     .pipe(reload({ stream: true }));
