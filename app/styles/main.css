@@ -3,12 +3,27 @@ body {
   height: 100%;
   width: 100%;
 }
+body {
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 section {
   float: left;
-  display: inline-block !important;
+  height: 100%;
 }
 .fullpage {
-  height: calc(100vh - 60px);
+  height: 100%;
   position: fixed;
 }
 .center {
@@ -75,13 +90,24 @@ section {
   transform: translateY(-50%);
 }
 .section3 {
-  padding: 4vh 40px;
-  height: 82vh;
-  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  display: flex !important;
+}
+.section-3-images {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+}
+.section-3-images .second-img {
+  margin-left: 25px;
 }
 .section8 {
   margin-left: 250px;
   padding: 2.5vh 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section8 .images img {
   padding: 0px 3px;
@@ -162,12 +188,16 @@ p.promosubtitle span {
   */
   margin-left: 19vh;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .caption {
   font-size: 17px;
   margin-top: 2.5vh;
   text-align: center;
   color: #999;
+  height: auto !important;
 }
 .upper-p {
   float: left;
@@ -203,9 +233,17 @@ p.promosubtitle span {
   margin-top: 40px;
   margin-left: -480px;
 }
+.section6 {
+  height: 100%;
+}
+.section6 div {
+  height: 100%;
+}
 .section6lmg {
-  display: inline-block;
   float: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .section6leftimage {
   vertical-align: middle;
@@ -217,6 +255,9 @@ p.promosubtitle span {
 }
 .section11 {
   padding: 6vh 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section11 img {
   height: 71vh;
@@ -237,7 +278,9 @@ p.promosubtitle span {
   padding: 46vh 125px;
   line-height: 25px;
   width: 577px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   float: left;
 }
 .section5 p {
@@ -249,8 +292,8 @@ p.promosubtitle span {
   margin-left: -228px;
 }
 .section5texture {
-  margin-top: 3vh;
-  margin-left: -513px;
+  width: 522px;
+  background-image: url("../images/marble_white.jpg");
 }
 .section5image {
   margin-top: 14vh;
@@ -269,6 +312,9 @@ p.promosubtitle span {
   height: 83.5vh;
   max-height: 1002px;
 }
+.section6img2caption {
+  height: fit-content;
+}
 .sepcopy {
   float: left;
   font-size: 20px;
@@ -276,9 +322,11 @@ p.promosubtitle span {
 }
 .section7 {
   margin-left: 240px;
-  margin-top: 40px;
-  height: 75%;
+  height: 100%;
   width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .sec7leftimage img {
   margin-top: 8.5vh;
@@ -302,10 +350,20 @@ p.promosubtitle span {
 .section7 p {
   margin-top: 13vh;
 }
+.section9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .section9 img {
   height: 79vh;
   margin-top: 2vh;
   max-height: 948px;
+}
+.section10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section10 img {
   padding: 0px 7px;
@@ -326,8 +384,7 @@ p.promosubtitle span {
   padding: 0 0 0 100px;
 }
 .section13 img {
-  position: absolute;
-  height: 100vh;
+  height: 100%;
 }
 .formelements {
   width: 488px;
@@ -429,13 +486,6 @@ label {
 .customCheck p {
   margin-left: 34px;
 }
-.cnp {
-  height: 100%;
-  width: 100%;
-  font-family: "minion-pro", serif;
-  color: #1a1a1a;
-  -webkit-text-size-adjust: 100%;
-}
 .checkitem {
   display: block;
 }
@@ -489,6 +539,13 @@ label {
 }
 .socialtext span {
   margin-left: 4vh;
+}
+.fullpage {
+  height: 100%;
+  width: 100%;
+  font-family: "minion-pro", serif;
+  color: #1a1a1a;
+  -webkit-text-size-adjust: 100%;
 }
 @media screen and (min-height: 420px) {
   .fullpage {
@@ -614,4 +671,10 @@ label {
   section {
     display: block;
   }
+}
+.section6limg,
+.section6rimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

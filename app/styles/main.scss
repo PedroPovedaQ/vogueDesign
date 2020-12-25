@@ -1,7 +1,3 @@
-$icon-font-path: "../fonts/";
-// bower:scss
-
-// endbower
 html,
 body {
   height: 100%;
@@ -10,77 +6,72 @@ body {
 body {
   overflow-x: hidden;
 }
-
-// .pagescroll body{
-//   overflow-x: scroll;
-//   overflow-y: hidden;
-// }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 section {
   float: left;
-  display: inline-block !important;
+  height: 100%;
 }
-
 .fullpage {
-  height: calc(100vh - 60px);
+  height: 100%;
   position: fixed;
 }
-
 .center {
   text-align: center;
 }
-
 .endtexture img {
   height: 100vh;
   width: 350px;
 }
-
 .pull-left {
   float: left;
 }
-
 .pull-right {
   float: right;
 }
-
 .inline {
   display: inline-block;
 }
-
 .clear {
   clear: both;
 }
-
 .row {
   clear: both;
 }
-
 .endimage {
   right: 10000px;
 }
-
 .gensection {
   margin-left: 171px;
   padding: 31px 40px;
   width: auto;
 }
-
 .gensection img {
   display: inline-block;
 }
-
 .section1 {
-  //padding: 85px 0px 60px 0px;
   height: 100%;
   width: 133.3vh;
   position: relative;
 }
-
 .section2 {
-  /* margin-top: 20vh; */
+  /* margin-top: 20vh;
+  */
   margin-left: -91px;
   position: relative;
   padding: 0px 40px;
-  /* padding-top: 5vh; */
+  /* padding-top: 5vh;
+  */
   width: 550px;
   background-color: #fff;
   height: 77vh;
@@ -92,47 +83,50 @@ section {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .promomodal {
   position: absolute;
   overflow-x: hidden;
   top: 50%;
   transform: translateY(-50%);
 }
-
 .section3 {
-  padding: 4vh 40px;
-  height: 82vh;
-  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  display: flex !important;
 }
-
+.section-3-images {
+  display: flex;
+  justify-content: center;
+  max-height: 80vh;
+}
+.section-3-images .second-img {
+  margin-left: 25px;
+}
 .section8 {
   margin-left: 250px;
   padding: 2.5vh 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .section8 .images img {
   padding: 0px 3px;
   height: 78vh;
   margin-top: 1vh;
   max-height: 936px;
 }
-
 .section3 .images img {
   padding: 0px 3px;
   height: 75vh;
   margin-top: 3vh;
   max-height: 900px;
 }
-
 .sec6image {
   display: inline-block;
 }
-
 .section5texture {
   height: 86.5vh;
 }
-
 .youtube {
   width: 100%;
   height: 80%;
@@ -140,29 +134,24 @@ section {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .video {
   width: 100%;
   height: 100%;
 }
-
 .promotitle {
   font-size: 14px;
   text-transform: uppercase;
   font-family: "minion-pro", serif;
   margin: 0;
 }
-
 .promotext {
   font-size: 17px;
   margin-top: 2.6vh;
 }
-
 .promocredits {
   font-weight: bold;
   margin-bottom: 0px;
 }
-
 .winbutton {
   background-color: #d7d5d5;
   font-family: "europa", sans-serif;
@@ -171,7 +160,6 @@ section {
   margin: 20px 0;
   display: inline-block;
 }
-
 .promosubtitle {
   max-width: 288px;
   line-height: 43px;
@@ -179,39 +167,38 @@ section {
   font-style: italic;
   margin-top: 1vh;
 }
-
 p.promosubtitle span {
   display: block;
   text-transform: uppercase;
   font-style: normal;
   font-family: "europa", sans-serif;
 }
-
 .promologo {
   height: 8vh;
   display: block;
   margin-bottom: 20px;
 }
-
 .shoplink {
   color: #000;
   font-size: 16px;
 }
-
 .section4 {
-  width: 900px;
-  /* margin-top: 160px; */
+  width: 700px;
+  /* margin-top: 160px;
+  */
   margin-left: 19vh;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .caption {
   font-size: 17px;
   margin-top: 2.5vh;
   text-align: center;
   color: #999;
+  height: auto;
 }
-
 .upper-p {
   float: left;
   line-height: 25.5px;
@@ -220,20 +207,17 @@ p.promosubtitle span {
   padding-top: 38px;
   letter-spacing: 0.1rem;
 }
-
 .lower-p {
   line-height: 25.5px;
   width: 515px;
   letter-spacing: 0.1rem;
 }
-
 .introletter {
   margin-bottom: -35px;
   float: left;
   font-size: 90px;
   padding: 10px;
 }
-
 .paragraphtext {
   z-index: 2;
   position: absolute;
@@ -244,145 +228,141 @@ p.promosubtitle span {
   transform: translateY(-50%);
   font-family: "minion-pro", serif;
 }
-
 .firstmarble {
   position: absolute;
   margin-top: 40px;
   margin-left: -480px;
 }
-
-.section6lmg {
-  display: inline-block;
-  float: left;
+.section6 {
+  height: 100%;
 }
-
+.section6 div {
+  height: 100%;
+}
+.section6lmg {
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .section6leftimage {
   vertical-align: middle;
   margin: 0 0 10px;
   position: absolute;
 }
-
 .absolute {
   position: absolute;
 }
-
 .section11 {
   padding: 6vh 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .section11 img {
   height: 71vh;
   max-height: 852px;
 }
-
 .sec11leftimage img {
   margin-top: 6vh;
   position: absolute;
 }
-
 .sec11rightimage img {
   margin-left: 32vh;
   margin-top: 0.1vh;
 }
-
 .section11 p {
   margin-top: 7.5vh;
 }
-
 .seperationtext {
   padding: 46vh 125px;
   line-height: 25px;
   width: 577px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   float: left;
 }
-
-.section5 p {
-  position: absolute;
-  /* width: 100%; */
-  text-align: center;
-  margin-top: 84vh;
-  margin-left: -228px;
-}
-
 .section5texture {
-  margin-top: 3vh;
-  margin-left: -513px;
+  width: 522px;
+  background-image: url("../images/marble_white.jpg");
 }
-
 .section5image {
   margin-top: 14vh;
   height: 67.5vh;
-  margin-left: -350px;
   max-height: 809px;
 }
-
 .section6img1 {
-  margin-left: 72.5vh;
+  margin-left: 150px;
   padding-top: 3.2vh;
   height: 89vh;
   max-height: 1068px;
+  z-index: 1;
 }
-
 .section6img2 {
   padding-top: 5vh;
   height: 83.5vh;
   max-height: 1002px;
 }
-
 .section6img2caption {
+  height: fit-content;
 }
-
 .sepcopy {
   float: left;
   font-size: 20px;
   text-align: justify;
 }
-
 .section7 {
   margin-left: 240px;
-  margin-top: 40px;
-  height: 75%;
+  height: 100%;
   width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .sec7leftimage img {
   margin-top: 8.5vh;
   z-index: 2;
 }
-
 .section7 img {
   position: absolute;
-  /* min-width: 62%; */
-  /* max-height: 65vh; */
+  /* min-width: 62%;
+  */
+  /* max-height: 65vh;
+  */
   height: 65vh;
   max-width: inherit;
   max-height: 780px;
 }
-
 .sec7rightimage img {
   position: relative;
   margin-left: 42vh;
   margin-top: 1vh;
 }
-
 .section7 p {
   margin-top: 13vh;
 }
-
+.section9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .section9 img {
   height: 79vh;
   margin-top: 2vh;
   max-height: 948px;
 }
-
+.section10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .section10 img {
   padding: 0px 7px;
   height: 79vh;
   margin-top: 2vh;
   max-height: 948px;
 }
-
 .section12 {
   margin-left: 37px;
   padding: 31px 40px;
@@ -392,30 +372,23 @@ p.promosubtitle span {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .section13 {
   padding: 0 0 0 100px;
 }
-
 .section13 img {
-  position: absolute;
-  height: 100vh;
+  height: 100%;
 }
-
 .formelements {
   width: 488px;
 }
-
 .formtitle span {
   text-transform: uppercase;
 }
-
 .formelements h1 {
   font-style: italic;
   font-size: 30px;
   margin-bottom: 1.8vh;
 }
-
 .formelements h2 {
   font-size: 15px;
   line-height: 20px;
@@ -424,7 +397,6 @@ p.promosubtitle span {
   text-align: justify;
   margin-top: 1vh;
 }
-
 .textinputs {
   padding-top: 1vh;
   padding-bottom: 2vh;
@@ -432,11 +404,9 @@ p.promosubtitle span {
   width: 100%;
   min-width: 420px;
 }
-
 input[type="checkbox"] {
   display: none;
 }
-
 .textinputs input {
   display: block;
   width: 100%;
@@ -447,34 +417,28 @@ input[type="checkbox"] {
   padding-bottom: 1.5vh;
   padding-left: 23px;
   padding-top: 1vh;
-  //font-size: 17px;
 }
-
 label {
   display: inline;
   font-weight: normal;
   font-size: 12px;
 }
-
 .formboxes {
   font-family: "europa", sans-serif;
   color: #999;
   margin-top: 2vh;
 }
-
 .formboxes input {
-  //display: none;
-  /* width: 100%; */
+  /* width: 100%;
+  */
   max-width: 620px;
   margin: 10px auto 10px auto;
   font-family: "europa", sans-serif;
   font-size: 14px;
 }
-
 .customCheck {
   position: relative;
 }
-
 .customCheck label span {
   cursor: pointer;
   position: absolute;
@@ -485,7 +449,6 @@ label {
   background: #fff;
   border: 1px solid #ddd;
 }
-
 .customCheck label:after {
   opacity: 0;
   content: "";
@@ -504,39 +467,20 @@ label {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-/**
- * Create the hover event of the tick
- */
-
+/** * Create the hover event of the tick */
 .customCheck label span:hover::after {
   opacity: 0.5;
 }
-
-/**
- * Create the checkbox state for the tick
- */
-
+/** * Create the checkbox state for the tick */
 .customCheck input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
-
 .customCheck p {
   margin-left: 34px;
 }
-
-.cnp {
-  height: 100%;
-  width: 100%;
-  font-family: "minion-pro", serif;
-  color: #1a1a1a;
-  -webkit-text-size-adjust: 100%;
-}
-
 .checkitem {
   display: block;
 }
-
 .formsubmit {
   font-weight: 600;
   line-height: 4vh;
@@ -548,7 +492,6 @@ label {
   font-style: italic;
   display: inline-block;
 }
-
 .formboxes label:before {
   content: "";
   position: absolute;
@@ -566,11 +509,9 @@ label {
   -ms-transition: 0.2s;
   transition: 0.2s;
 }
-
 .social {
   margin-top: 1.5vh;
 }
-
 .social [class*="fa fa-"] {
   background-color: #333;
   border-radius: 30px;
@@ -583,163 +524,150 @@ label {
   font-size: 15px;
   text-align: center;
 }
-
 .social img {
   width: 52px;
   height: 32px;
   margin-left: 3vh;
 }
-
 .socialtext span {
   margin-left: 4vh;
 }
-
+.fullpage {
+  height: 100%;
+  width: 100%;
+  font-family: "minion-pro", serif;
+  color: #1a1a1a;
+  -webkit-text-size-adjust: 100%;
+}
 @media screen and (min-height: 420px) {
   .fullpage {
     width: 9000px;
   }
 }
-
 @media screen and (min-height: 436px) {
   .fullpage {
     width: 9300px;
   }
 }
-
 @media screen and (min-height: 500px) {
   .fullpage {
     width: 9600px;
   }
 }
-
 @media screen and (min-height: 542px) {
   .fullpage {
     width: 9900px;
   }
 }
-
 @media screen and (min-height: 560px) {
   .fullpage {
     width: 10100px;
   }
 }
-
 @media screen and (min-height: 595px) {
   .fullpage {
     width: 10400px;
   }
 }
-
 @media screen and (min-height: 624px) {
   .fullpage {
     width: 10700px;
   }
 }
-
 @media screen and (min-height: 660px) {
   .fullpage {
     width: 11000px;
   }
 }
-
 @media screen and (min-height: 690px) {
   .fullpage {
     width: 11300px;
   }
 }
-
 @media screen and (min-height: 720px) {
   .fullpage {
     width: 11600px;
   }
 }
-
 @media screen and (min-height: 750px) {
   .fullpage {
     width: 11900px;
   }
 }
-
 @media screen and (min-height: 780px) {
   .fullpage {
     width: 12200px;
   }
 }
-
 @media screen and (min-height: 810px) {
   .fullpage {
     width: 12400px;
   }
 }
-
 @media screen and (min-height: 840px) {
   .fullpage {
     width: 12800px;
   }
 }
-
 @media screen and (min-height: 870px) {
   .fullpage {
     width: 13100px;
   }
 }
-
 @media screen and (min-height: 900px) {
   .fullpage {
     width: 13400px;
   }
 }
-
 @media screen and (min-height: 930px) {
   .fullpage {
     width: 13700px;
   }
 }
-
 @media screen and (min-height: 960px) {
   .fullpage {
     width: 14000px;
   }
 }
-
 @media screen and (min-height: 990px) {
   .fullpage {
     width: 14300px;
   }
 }
-
 @media screen and (min-height: 1020px) {
   .fullpage {
     width: 14600px;
   }
 }
-
 @media screen and (min-height: 1050px) {
   .fullpage {
     width: 14900px;
   }
 }
-
 @media screen and (min-height: 1080px) {
   .fullpage {
     width: 15200px;
   }
 }
-
 @media screen and (min-height: 1095px) {
   .fullpage {
     width: 15600px;
   }
 }
-
 @media screen and (min-height: 1160px) {
   .fullpage {
     width: 16600px;
   }
 }
-
 @media screen and (max-width: 700px) {
   section {
     display: block;
   }
+}
+.section6limg,
+.section6rimg,
+.imageholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
