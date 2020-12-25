@@ -25,7 +25,8 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "heroku-postbuild": "gulp"
   },
   "eslintConfig": {
     "env": {
